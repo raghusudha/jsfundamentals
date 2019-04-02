@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Array objects</title>
+    </head>
+    <body>
+            <script src="obj.js"></script>
+           
+            <input type="text" id="txtone" >
+            <button id="btnClick">Submit</button>
+    </body>
+    <script>
+         var x=document.getElementById("btnClick");
+         var y=document.getElementById("txtone");
+         x.addEventListener("click",()=>{
+             console.log(this);
+         })
+         y.addEventListener("change",function(){
+             console.log(this);
+         })
+
+    </script>
+</html>

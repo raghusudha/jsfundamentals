@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>test1</title>
+    </head>
+    <body>
+        <button id="demo">Click Me</button>
+        <script>
+     var promise=new Promise(function(resolve,reject){
+    if(true)  {
+        resolve("i am resolved");
+       }
+       else {
+           reject("its over");
+       }
+    })
+       promise.then(result=>{
+           console.log(result);
+
+       }).catch(err=>{
+           console.log(err);
+       });
+
+
+     console.log("hello promises");
+    
+
+
+</script>
+</body>
+</html>
